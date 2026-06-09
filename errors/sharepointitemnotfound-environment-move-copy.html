@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SharePointItemNotFound in Environment Move or Copy | Power Platform Error Fix</title>
+  <meta name="description" content="SharePointItemNotFound in Environment Move or Copy: what it means, common causes, and how to resolve it in Power Platform.">
+  <link rel="canonical" href="https://example.com/errors/sharepointitemnotfound-environment-move-copy.html">
+  <meta property="og:title" content="SharePointItemNotFound in Environment Move or Copy | Power Platform Error Fix">
+  <meta property="og:description" content="SharePointItemNotFound in Environment Move or Copy: what it means, common causes, and how to resolve it in Power Platform.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://example.com/errors/sharepointitemnotfound-environment-move-copy.html">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"SharePointItemNotFound in Environment Move or Copy | Power Platform Error Fix","description":"SharePointItemNotFound in Environment Move or Copy: what it means, common causes, and how to resolve it in Power Platform.","dateModified":"2026-06-09","about":["Microsoft Power Platform","Power Platform","SharePoint connector","SharePointItemNotFound","Environment Move or Copy"],"mainEntityOfPage":"https://example.com/errors/sharepointitemnotfound-environment-move-copy.html","author":{"@type":"Organization","name":"Power Platform Error Resolution Database"}}</script>
+  <style>
+    :root { --ink:#17212b; --muted:#5b6773; --line:#d8e0e6; --surface:#fff; --brand:#15506a; --danger:#b42318; --warn:#a84618; --shadow:0 16px 42px rgba(20,38,50,.12); }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:Arial, Helvetica, sans-serif; color:var(--ink); background:#eef4f7; }
+    header { background:var(--brand); color:#fff; padding:26px clamp(18px,4vw,56px) 82px; }
+    .wrap, main, footer { max-width:1060px; margin:0 auto; }
+    .crumb { color:#dcecf2; text-decoration:none; font-weight:700; }
+    h1 { margin:24px 0 12px; font-size:clamp(2rem,5vw,3.4rem); line-height:1.06; letter-spacing:0; }
+    .intro { max-width:850px; margin:0; color:#dcecf2; line-height:1.55; }
+    main { margin-top:-52px; padding:0 clamp(16px,4vw,56px) 42px; }
+    .panel, .card { background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:20px; }
+    .panel { box-shadow:var(--shadow); }
+    .grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:18px; }
+    .meta { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px; }
+    .pill { display:inline-flex; align-items:center; min-height:28px; border-radius:999px; padding:4px 10px; background:#edf4f6; color:#234654; font-size:.82rem; font-weight:700; }
+    .pill.high { background:#fde8e4; color:var(--danger); }
+    .pill.medium { background:#fff1df; color:var(--warn); }
+    .pill.low { background:#e7f5ec; color:#14633c; }
+    h2 { margin:0 0 10px; font-size:1.08rem; }
+    p, li { color:var(--muted); line-height:1.55; }
+    p { margin:0; }
+    ul { margin:0; padding-left:20px; }
+    a { color:var(--brand); font-weight:700; }
+    .back { display:inline-flex; margin-top:18px; }
+    footer { padding:0 clamp(16px,4vw,56px) 34px; color:var(--muted); font-size:.88rem; }
+    @media (max-width:780px) { .grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="crumb" href="../index.html">Power Platform Error Database</a>
+      <h1>SharePointItemNotFound in Environment Move or Copy</h1>
+      <p class="intro">The SharePoint connector cannot find the list item or file item referenced by the flow. This article focuses on the environment move or copy scenario.</p>
+    </div>
+  </header>
+  <main>
+    <article class="panel">
+      <div class="meta">
+        <span class="pill medium">Medium</span>
+        <span class="pill">PP-1959</span>
+        <span class="pill">Power Platform</span>
+        <span class="pill">SharePoint connector</span>
+        <span class="pill">HTTP 404</span>
+      </div>
+      <div class="grid">
+        <section class="card"><h2>Applies To</h2><p>Power Platform environment copy, restore, backup, or tenant move</p></section>
+        <section class="card"><h2>Typical Scenario</h2><p>An environment is copied, restored, moved, or reconfigured and existing apps or flows are tested afterward.</p></section>
+        <section class="card"><h2>What This Error Means</h2><p>The SharePoint connector cannot find the list item or file item referenced by the flow. This article focuses on the environment move or copy scenario.</p></section>
+        <section class="card"><h2>Common Causes</h2><p>Item deleted, wrong item ID, item moved, filter returned no rows, or permissions changed. In this scenario, check environment URLs, connection references, callback URLs, app registrations, data source IDs, and tenant policies.</p></section>
+        <section class="card"><h2>How To Resolve It</h2><p>Confirm the item exists, refresh the ID lookup, and add handling for empty query results. For environment move or copy, also verify: Check environment URLs, connection references, callback URLs, app registrations, data source IDs, and tenant policies.</p></section>
+        <section class="card"><h2>How To Prevent It</h2><p>Avoid hardcoded item IDs unless the item is governed as configuration data. For environment move or copy, document the expected permissions, connector settings, and test data used to validate the fix.</p></section>
+        <section class="card"><h2>Ownership And Search Tags</h2><p><strong>Owner:</strong> Power Platform admin</p><p><strong>Tags:</strong> sharepoint item not found connector environment-move-copy Environment Move or Copy</p></section>
+        <section class="card"><h2>Source References</h2><ul><li><a href="https://learn.microsoft.com/en-us/power-automate/error-reference" target="_blank" rel="noreferrer">SRC-001: Power Automate cloud flow error code reference</a></li></ul></section>
+      </div>
+      <a class="back" href="../index.html">Back to searchable database</a>
+    </article>
+  </main>
+  <footer>Power Platform Error Codes and Resolution Database. Last verified 2026-06-09.</footer>
+</body>
+</html>

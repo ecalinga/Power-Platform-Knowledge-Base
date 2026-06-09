@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InvalidColumnName in Teams Notification Flow | Power Platform Error Fix</title>
+  <meta name="description" content="InvalidColumnName in Teams Notification Flow: what it means, common causes, and how to resolve it in Dataverse.">
+  <link rel="canonical" href="https://example.com/errors/invalidcolumnname-teams-notification-flow.html">
+  <meta property="og:title" content="InvalidColumnName in Teams Notification Flow | Power Platform Error Fix">
+  <meta property="og:description" content="InvalidColumnName in Teams Notification Flow: what it means, common causes, and how to resolve it in Dataverse.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://example.com/errors/invalidcolumnname-teams-notification-flow.html">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"InvalidColumnName in Teams Notification Flow | Power Platform Error Fix","description":"InvalidColumnName in Teams Notification Flow: what it means, common causes, and how to resolve it in Dataverse.","dateModified":"2026-06-09","about":["Microsoft Power Platform","Dataverse","Query","InvalidColumnName","Teams Notification Flow"],"mainEntityOfPage":"https://example.com/errors/invalidcolumnname-teams-notification-flow.html","author":{"@type":"Organization","name":"Power Platform Error Resolution Database"}}</script>
+  <style>
+    :root { --ink:#17212b; --muted:#5b6773; --line:#d8e0e6; --surface:#fff; --brand:#15506a; --danger:#b42318; --warn:#a84618; --shadow:0 16px 42px rgba(20,38,50,.12); }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:Arial, Helvetica, sans-serif; color:var(--ink); background:#eef4f7; }
+    header { background:var(--brand); color:#fff; padding:26px clamp(18px,4vw,56px) 82px; }
+    .wrap, main, footer { max-width:1060px; margin:0 auto; }
+    .crumb { color:#dcecf2; text-decoration:none; font-weight:700; }
+    h1 { margin:24px 0 12px; font-size:clamp(2rem,5vw,3.4rem); line-height:1.06; letter-spacing:0; }
+    .intro { max-width:850px; margin:0; color:#dcecf2; line-height:1.55; }
+    main { margin-top:-52px; padding:0 clamp(16px,4vw,56px) 42px; }
+    .panel, .card { background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:20px; }
+    .panel { box-shadow:var(--shadow); }
+    .grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:18px; }
+    .meta { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px; }
+    .pill { display:inline-flex; align-items:center; min-height:28px; border-radius:999px; padding:4px 10px; background:#edf4f6; color:#234654; font-size:.82rem; font-weight:700; }
+    .pill.high { background:#fde8e4; color:var(--danger); }
+    .pill.medium { background:#fff1df; color:var(--warn); }
+    .pill.low { background:#e7f5ec; color:#14633c; }
+    h2 { margin:0 0 10px; font-size:1.08rem; }
+    p, li { color:var(--muted); line-height:1.55; }
+    p { margin:0; }
+    ul { margin:0; padding-left:20px; }
+    a { color:var(--brand); font-weight:700; }
+    .back { display:inline-flex; margin-top:18px; }
+    footer { padding:0 clamp(16px,4vw,56px) 34px; color:var(--muted); font-size:.88rem; }
+    @media (max-width:780px) { .grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="crumb" href="../index.html">Power Platform Error Database</a>
+      <h1>InvalidColumnName in Teams Notification Flow</h1>
+      <p class="intro">A query, payload, or expression references a column name that is not valid for the table. This article focuses on the teams notification flow scenario.</p>
+    </div>
+  </header>
+  <main>
+    <article class="panel">
+      <div class="meta">
+        <span class="pill medium">Medium</span>
+        <span class="pill">PP-1603</span>
+        <span class="pill">Dataverse</span>
+        <span class="pill">Query</span>
+        <span class="pill">HTTP 400</span>
+      </div>
+      <div class="grid">
+        <section class="card"><h2>Applies To</h2><p>Power Automate cloud flow posting to Microsoft Teams</p></section>
+        <section class="card"><h2>Typical Scenario</h2><p>The automation posts adaptive cards or channel messages after a business event.</p></section>
+        <section class="card"><h2>What This Error Means</h2><p>A query, payload, or expression references a column name that is not valid for the table. This article focuses on the teams notification flow scenario.</p></section>
+        <section class="card"><h2>Common Causes</h2><p>Display name used instead of logical name, renamed column, typo, or wrong table context. In this scenario, confirm the team, channel, connector permissions, message payload, and DLP policy for the environment.</p></section>
+        <section class="card"><h2>How To Resolve It</h2><p>Check table metadata and update the request to use the exact logical column name. For teams notification flow, also verify: Confirm the team, channel, connector permissions, message payload, and DLP policy for the environment.</p></section>
+        <section class="card"><h2>How To Prevent It</h2><p>Use metadata lookup or generated constants for column names. For teams notification flow, document the expected permissions, connector settings, and test data used to validate the fix.</p></section>
+        <section class="card"><h2>Ownership And Search Tags</h2><p><strong>Owner:</strong> Flow maker</p><p><strong>Tags:</strong> invalid column name dataverse teams-notification-flow Teams Notification Flow</p></section>
+        <section class="card"><h2>Source References</h2><ul><li><a href="https://learn.microsoft.com/en-us/troubleshoot/power-platform/dataverse/dataverse-web-api-and-sdk/web-api-client-errors" target="_blank" rel="noreferrer">SRC-002: Troubleshoot Dataverse Web API client errors</a></li>
+<li><a href="https://learn.microsoft.com/en-us/power-apps/developer/data-platform/webapi/compose-http-requests-handle-errors" target="_blank" rel="noreferrer">SRC-003: Compose HTTP requests and handle errors</a></li></ul></section>
+      </div>
+      <a class="back" href="../index.html">Back to searchable database</a>
+    </article>
+  </main>
+  <footer>Power Platform Error Codes and Resolution Database. Last verified 2026-06-09.</footer>
+</body>
+</html>

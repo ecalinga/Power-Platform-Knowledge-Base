@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CannotDeleteDueToAssociation in Outlook Email Automation | Power Platform Error Fix</title>
+  <meta name="description" content="CannotDeleteDueToAssociation in Outlook Email Automation: what it means, common causes, and how to resolve it in Dataverse.">
+  <link rel="canonical" href="https://example.com/errors/cannotdeleteduetoassociation-outlook-email-automation.html">
+  <meta property="og:title" content="CannotDeleteDueToAssociation in Outlook Email Automation | Power Platform Error Fix">
+  <meta property="og:description" content="CannotDeleteDueToAssociation in Outlook Email Automation: what it means, common causes, and how to resolve it in Dataverse.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://example.com/errors/cannotdeleteduetoassociation-outlook-email-automation.html">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"CannotDeleteDueToAssociation in Outlook Email Automation | Power Platform Error Fix","description":"CannotDeleteDueToAssociation in Outlook Email Automation: what it means, common causes, and how to resolve it in Dataverse.","dateModified":"2026-06-09","about":["Microsoft Power Platform","Dataverse","Data relationship","CannotDeleteDueToAssociation","Outlook Email Automation"],"mainEntityOfPage":"https://example.com/errors/cannotdeleteduetoassociation-outlook-email-automation.html","author":{"@type":"Organization","name":"Power Platform Error Resolution Database"}}</script>
+  <style>
+    :root { --ink:#17212b; --muted:#5b6773; --line:#d8e0e6; --surface:#fff; --brand:#15506a; --danger:#b42318; --warn:#a84618; --shadow:0 16px 42px rgba(20,38,50,.12); }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:Arial, Helvetica, sans-serif; color:var(--ink); background:#eef4f7; }
+    header { background:var(--brand); color:#fff; padding:26px clamp(18px,4vw,56px) 82px; }
+    .wrap, main, footer { max-width:1060px; margin:0 auto; }
+    .crumb { color:#dcecf2; text-decoration:none; font-weight:700; }
+    h1 { margin:24px 0 12px; font-size:clamp(2rem,5vw,3.4rem); line-height:1.06; letter-spacing:0; }
+    .intro { max-width:850px; margin:0; color:#dcecf2; line-height:1.55; }
+    main { margin-top:-52px; padding:0 clamp(16px,4vw,56px) 42px; }
+    .panel, .card { background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:20px; }
+    .panel { box-shadow:var(--shadow); }
+    .grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:18px; }
+    .meta { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px; }
+    .pill { display:inline-flex; align-items:center; min-height:28px; border-radius:999px; padding:4px 10px; background:#edf4f6; color:#234654; font-size:.82rem; font-weight:700; }
+    .pill.high { background:#fde8e4; color:var(--danger); }
+    .pill.medium { background:#fff1df; color:var(--warn); }
+    .pill.low { background:#e7f5ec; color:#14633c; }
+    h2 { margin:0 0 10px; font-size:1.08rem; }
+    p, li { color:var(--muted); line-height:1.55; }
+    p { margin:0; }
+    ul { margin:0; padding-left:20px; }
+    a { color:var(--brand); font-weight:700; }
+    .back { display:inline-flex; margin-top:18px; }
+    footer { padding:0 clamp(16px,4vw,56px) 34px; color:var(--muted); font-size:.88rem; }
+    @media (max-width:780px) { .grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="crumb" href="../index.html">Power Platform Error Database</a>
+      <h1>CannotDeleteDueToAssociation in Outlook Email Automation</h1>
+      <p class="intro">A row cannot be deleted because related records or relationship rules block deletion. This article focuses on the outlook email automation scenario.</p>
+    </div>
+  </header>
+  <main>
+    <article class="panel">
+      <div class="meta">
+        <span class="pill medium">Medium</span>
+        <span class="pill">PP-1182</span>
+        <span class="pill">Dataverse</span>
+        <span class="pill">Data relationship</span>
+        <span class="pill">HTTP 400</span>
+      </div>
+      <div class="grid">
+        <section class="card"><h2>Applies To</h2><p>Power Automate cloud flow using Outlook mail actions</p></section>
+        <section class="card"><h2>Typical Scenario</h2><p>The flow sends, moves, or reads email and then passes mailbox data to later actions.</p></section>
+        <section class="card"><h2>What This Error Means</h2><p>A row cannot be deleted because related records or relationship rules block deletion. This article focuses on the outlook email automation scenario.</p></section>
+        <section class="card"><h2>Common Causes</h2><p>Restrict delete relationship behavior, child records still exist, or cascade rules prevent the operation. In this scenario, check mailbox permissions, shared mailbox access, and whether the connection account still has the expected mailbox role.</p></section>
+        <section class="card"><h2>How To Resolve It</h2><p>Review related records and relationship behavior, remove or reassign child rows, then retry deletion. For outlook email automation, also verify: Check mailbox permissions, shared mailbox access, and whether the connection account still has the expected mailbox role.</p></section>
+        <section class="card"><h2>How To Prevent It</h2><p>Document cascade behavior for tables used by automation. For outlook email automation, document the expected permissions, connector settings, and test data used to validate the fix.</p></section>
+        <section class="card"><h2>Ownership And Search Tags</h2><p><strong>Owner:</strong> Flow maker</p><p><strong>Tags:</strong> cannot delete association dataverse relationship outlook-email-automation Outlook Email Automation</p></section>
+        <section class="card"><h2>Source References</h2><ul><li><a href="https://learn.microsoft.com/en-us/power-apps/developer/data-platform/webapi/compose-http-requests-handle-errors" target="_blank" rel="noreferrer">SRC-003: Compose HTTP requests and handle errors</a></li></ul></section>
+      </div>
+      <a class="back" href="../index.html">Back to searchable database</a>
+    </article>
+  </main>
+  <footer>Power Platform Error Codes and Resolution Database. Last verified 2026-06-09.</footer>
+</body>
+</html>

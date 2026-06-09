@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dataverse Forbidden in Managed Solution Upgrade | Power Platform Error Fix</title>
+  <meta name="description" content="Dataverse Forbidden in Managed Solution Upgrade: what it means, common causes, and how to resolve it in Dataverse.">
+  <link rel="canonical" href="https://example.com/errors/dataverse-forbidden-managed-solution-upgrade.html">
+  <meta property="og:title" content="Dataverse Forbidden in Managed Solution Upgrade | Power Platform Error Fix">
+  <meta property="og:description" content="Dataverse Forbidden in Managed Solution Upgrade: what it means, common causes, and how to resolve it in Dataverse.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://example.com/errors/dataverse-forbidden-managed-solution-upgrade.html">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Dataverse Forbidden in Managed Solution Upgrade | Power Platform Error Fix","description":"Dataverse Forbidden in Managed Solution Upgrade: what it means, common causes, and how to resolve it in Dataverse.","dateModified":"2026-06-09","about":["Microsoft Power Platform","Dataverse","Security","Dataverse Forbidden","Managed Solution Upgrade"],"mainEntityOfPage":"https://example.com/errors/dataverse-forbidden-managed-solution-upgrade.html","author":{"@type":"Organization","name":"Power Platform Error Resolution Database"}}</script>
+  <style>
+    :root { --ink:#17212b; --muted:#5b6773; --line:#d8e0e6; --surface:#fff; --brand:#15506a; --danger:#b42318; --warn:#a84618; --shadow:0 16px 42px rgba(20,38,50,.12); }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:Arial, Helvetica, sans-serif; color:var(--ink); background:#eef4f7; }
+    header { background:var(--brand); color:#fff; padding:26px clamp(18px,4vw,56px) 82px; }
+    .wrap, main, footer { max-width:1060px; margin:0 auto; }
+    .crumb { color:#dcecf2; text-decoration:none; font-weight:700; }
+    h1 { margin:24px 0 12px; font-size:clamp(2rem,5vw,3.4rem); line-height:1.06; letter-spacing:0; }
+    .intro { max-width:850px; margin:0; color:#dcecf2; line-height:1.55; }
+    main { margin-top:-52px; padding:0 clamp(16px,4vw,56px) 42px; }
+    .panel, .card { background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:20px; }
+    .panel { box-shadow:var(--shadow); }
+    .grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:18px; }
+    .meta { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px; }
+    .pill { display:inline-flex; align-items:center; min-height:28px; border-radius:999px; padding:4px 10px; background:#edf4f6; color:#234654; font-size:.82rem; font-weight:700; }
+    .pill.high { background:#fde8e4; color:var(--danger); }
+    .pill.medium { background:#fff1df; color:var(--warn); }
+    .pill.low { background:#e7f5ec; color:#14633c; }
+    h2 { margin:0 0 10px; font-size:1.08rem; }
+    p, li { color:var(--muted); line-height:1.55; }
+    p { margin:0; }
+    ul { margin:0; padding-left:20px; }
+    a { color:var(--brand); font-weight:700; }
+    .back { display:inline-flex; margin-top:18px; }
+    footer { padding:0 clamp(16px,4vw,56px) 34px; color:var(--muted); font-size:.88rem; }
+    @media (max-width:780px) { .grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="crumb" href="../index.html">Power Platform Error Database</a>
+      <h1>Dataverse Forbidden in Managed Solution Upgrade</h1>
+      <p class="intro">Dataverse rejected the operation because the user or app does not have the required privilege. This article focuses on the managed solution upgrade scenario.</p>
+    </div>
+  </header>
+  <main>
+    <article class="panel">
+      <div class="meta">
+        <span class="pill high">High</span>
+        <span class="pill">PP-0598</span>
+        <span class="pill">Dataverse</span>
+        <span class="pill">Security</span>
+        <span class="pill">HTTP 403</span>
+      </div>
+      <div class="grid">
+        <section class="card"><h2>Applies To</h2><p>Power Platform managed solution upgrade or patch</p></section>
+        <section class="card"><h2>Typical Scenario</h2><p>A managed solution update, patch, or stage-for-upgrade operation is applied to a target environment.</p></section>
+        <section class="card"><h2>What This Error Means</h2><p>Dataverse rejected the operation because the user or app does not have the required privilege. This article focuses on the managed solution upgrade scenario.</p></section>
+        <section class="card"><h2>Common Causes</h2><p>Missing table privilege, row access gap, field security restriction, team membership issue, or business unit scope mismatch. In this scenario, check solution layering, missing dependencies, active customizations, publisher identity, and upgrade path order.</p></section>
+        <section class="card"><h2>How To Resolve It</h2><p>Review security roles, team membership, field security profiles, and row ownership for the calling identity. For managed solution upgrade, also verify: Check solution layering, missing dependencies, active customizations, publisher identity, and upgrade path order.</p></section>
+        <section class="card"><h2>How To Prevent It</h2><p>Test APIs with least-privilege service principals before production release. For managed solution upgrade, document the expected permissions, connector settings, and test data used to validate the fix.</p></section>
+        <section class="card"><h2>Ownership And Search Tags</h2><p><strong>Owner:</strong> Release manager</p><p><strong>Tags:</strong> dataverse forbidden privilege security role managed-solution-upgrade Managed Solution Upgrade</p></section>
+        <section class="card"><h2>Source References</h2><ul><li><a href="https://learn.microsoft.com/en-us/power-apps/developer/data-platform/webapi/compose-http-requests-handle-errors" target="_blank" rel="noreferrer">SRC-003: Compose HTTP requests and handle errors</a></li></ul></section>
+      </div>
+      <a class="back" href="../index.html">Back to searchable database</a>
+    </article>
+  </main>
+  <footer>Power Platform Error Codes and Resolution Database. Last verified 2026-06-09.</footer>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "SRC-001": {
+    "title": "Power Automate cloud flow error code reference",
+    "url": "https://learn.microsoft.com/en-us/power-automate/error-reference"
+  },
+  "SRC-002": {
+    "title": "Troubleshoot Dataverse Web API client errors",
+    "url": "https://learn.microsoft.com/en-us/troubleshoot/power-platform/dataverse/dataverse-web-api-and-sdk/web-api-client-errors"
+  },
+  "SRC-003": {
+    "title": "Compose HTTP requests and handle errors",
+    "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/webapi/compose-http-requests-handle-errors"
+  },
+  "SRC-004": {
+    "title": "Service protection API limits",
+    "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/api-limits"
+  },
+  "SRC-005": {
+    "title": "Session creation error codes in unattended desktop flow runs",
+    "url": "https://learn.microsoft.com/en-us/troubleshoot/power-platform/power-automate/desktop-flows/troubleshoot-session-creation-errrors"
+  },
+  "SRC-006": {
+    "title": "Power Apps wrap: Something went wrong error codes",
+    "url": "https://learn.microsoft.com/en-us/troubleshoot/power-platform/power-apps/manage-apps/something-went-wrong-error-codes"
+  },
+  "SRC-007": {
+    "title": "Best practices when updating a flow",
+    "url": "https://learn.microsoft.com/en-us/troubleshoot/power-platform/power-apps/connections/best-practices-when-updating-a-flow"
+  },
+  "SRC-008": {
+    "title": "Troubleshoot desktop flow run queue-based errors",
+    "url": "https://learn.microsoft.com/en-us/troubleshoot/power-platform/power-automate/desktop-flows/troubleshoot-desktop-flow-run-queue-errors"
+  }
+}

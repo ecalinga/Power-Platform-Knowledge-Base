@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WorkflowRunActionRepetitionQuotaExceeded in Adaptive Card Post | Power Platform Error Fix</title>
+  <meta name="description" content="WorkflowRunActionRepetitionQuotaExceeded in Adaptive Card Post: what it means, common causes, and how to resolve it in Power Automate.">
+  <link rel="canonical" href="https://example.com/errors/workflowrunactionrepetitionquotaexceeded-adaptive-card-post.html">
+  <meta property="og:title" content="WorkflowRunActionRepetitionQuotaExceeded in Adaptive Card Post | Power Platform Error Fix">
+  <meta property="og:description" content="WorkflowRunActionRepetitionQuotaExceeded in Adaptive Card Post: what it means, common causes, and how to resolve it in Power Automate.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://example.com/errors/workflowrunactionrepetitionquotaexceeded-adaptive-card-post.html">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"WorkflowRunActionRepetitionQuotaExceeded in Adaptive Card Post | Power Platform Error Fix","description":"WorkflowRunActionRepetitionQuotaExceeded in Adaptive Card Post: what it means, common causes, and how to resolve it in Power Automate.","dateModified":"2026-06-09","about":["Microsoft Power Platform","Power Automate","Throttling","WorkflowRunActionRepetitionQuotaExceeded","Adaptive Card Post"],"mainEntityOfPage":"https://example.com/errors/workflowrunactionrepetitionquotaexceeded-adaptive-card-post.html","author":{"@type":"Organization","name":"Power Platform Error Resolution Database"}}</script>
+  <style>
+    :root { --ink:#17212b; --muted:#5b6773; --line:#d8e0e6; --surface:#fff; --brand:#15506a; --danger:#b42318; --warn:#a84618; --shadow:0 16px 42px rgba(20,38,50,.12); }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:Arial, Helvetica, sans-serif; color:var(--ink); background:#eef4f7; }
+    header { background:var(--brand); color:#fff; padding:26px clamp(18px,4vw,56px) 82px; }
+    .wrap, main, footer { max-width:1060px; margin:0 auto; }
+    .crumb { color:#dcecf2; text-decoration:none; font-weight:700; }
+    h1 { margin:24px 0 12px; font-size:clamp(2rem,5vw,3.4rem); line-height:1.06; letter-spacing:0; }
+    .intro { max-width:850px; margin:0; color:#dcecf2; line-height:1.55; }
+    main { margin-top:-52px; padding:0 clamp(16px,4vw,56px) 42px; }
+    .panel, .card { background:var(--surface); border:1px solid var(--line); border-radius:8px; padding:20px; }
+    .panel { box-shadow:var(--shadow); }
+    .grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:18px; }
+    .meta { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:16px; }
+    .pill { display:inline-flex; align-items:center; min-height:28px; border-radius:999px; padding:4px 10px; background:#edf4f6; color:#234654; font-size:.82rem; font-weight:700; }
+    .pill.high { background:#fde8e4; color:var(--danger); }
+    .pill.medium { background:#fff1df; color:var(--warn); }
+    .pill.low { background:#e7f5ec; color:#14633c; }
+    h2 { margin:0 0 10px; font-size:1.08rem; }
+    p, li { color:var(--muted); line-height:1.55; }
+    p { margin:0; }
+    ul { margin:0; padding-left:20px; }
+    a { color:var(--brand); font-weight:700; }
+    .back { display:inline-flex; margin-top:18px; }
+    footer { padding:0 clamp(16px,4vw,56px) 34px; color:var(--muted); font-size:.88rem; }
+    @media (max-width:780px) { .grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="crumb" href="../index.html">Power Platform Error Database</a>
+      <h1>WorkflowRunActionRepetitionQuotaExceeded in Adaptive Card Post</h1>
+      <p class="intro">A loop exceeded the allowed number of repetitions for a single flow run. This article focuses on the adaptive card post scenario.</p>
+    </div>
+  </header>
+  <main>
+    <article class="panel">
+      <div class="meta">
+        <span class="pill medium">Medium</span>
+        <span class="pill">PP-0354</span>
+        <span class="pill">Power Automate</span>
+        <span class="pill">Throttling</span>
+        
+      </div>
+      <div class="grid">
+        <section class="card"><h2>Applies To</h2><p>Power Automate or Teams workflow posting adaptive cards</p></section>
+        <section class="card"><h2>Typical Scenario</h2><p>The flow sends an adaptive card to Teams or Outlook and later processes the response.</p></section>
+        <section class="card"><h2>What This Error Means</h2><p>A loop exceeded the allowed number of repetitions for a single flow run. This article focuses on the adaptive card post scenario.</p></section>
+        <section class="card"><h2>Common Causes</h2><p>Large unfiltered dataset, nested loops multiplying iterations, or Get items returning all rows. In this scenario, check adaptive card JSON, unsupported schema version, user identity, channel permissions, and response parsing.</p></section>
+        <section class="card"><h2>How To Resolve It</h2><p>Filter at the source, use OData filters and top limits, batch work across runs, or use Select and Filter array where possible. For adaptive card post, also verify: Check adaptive card JSON, unsupported schema version, user identity, channel permissions, and response parsing.</p></section>
+        <section class="card"><h2>How To Prevent It</h2><p>Reduce rows before loops and monitor run volume. For adaptive card post, document the expected permissions, connector settings, and test data used to validate the fix.</p></section>
+        <section class="card"><h2>Ownership And Search Tags</h2><p><strong>Owner:</strong> Collaboration app owner</p><p><strong>Tags:</strong> loop quota apply to each repetitions adaptive-card-post Adaptive Card Post</p></section>
+        <section class="card"><h2>Source References</h2><ul><li><a href="https://learn.microsoft.com/en-us/power-automate/error-reference" target="_blank" rel="noreferrer">SRC-001: Power Automate cloud flow error code reference</a></li></ul></section>
+      </div>
+      <a class="back" href="../index.html">Back to searchable database</a>
+    </article>
+  </main>
+  <footer>Power Platform Error Codes and Resolution Database. Last verified 2026-06-09.</footer>
+</body>
+</html>
